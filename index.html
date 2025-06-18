@@ -23,16 +23,16 @@
         
         .header {
             text-align: center;
-            background: #ff00ff;
+            background: #ff0000;
             padding: 15px;
-            border: 2px dashed #0000ff;
+            border: 2px dashed #000000;
             margin-bottom: 20px;
         }
         
         .header h1 {
-            color: #ff0000;
+            color: #ffff00;
             font-size: 36px;
-            text-shadow: 2px 2px #00ff00;
+            text-shadow: 2px 2px #000000;
             margin: 0;
             animation: blink 1s infinite;
         }
@@ -61,7 +61,7 @@
         
         .nav a:hover {
             border: 2px inset #ffffff;
-            background: #00ff00;
+            background: #ffff00;
             color: #000000;
         }
         
@@ -73,10 +73,20 @@
         .sidebar {
             display: table-cell;
             width: 200px;
-            background: #ffcc00;
+            background: #ff0000;
             padding: 15px;
             vertical-align: top;
-            border-right: 3px solid #ff0000;
+            border-right: 3px solid #000000;
+        }
+        
+        .sidebar h3 {
+            color: #ffff00;
+            text-shadow: 1px 1px #000000;
+        }
+        
+        .sidebar a {
+            color: #ffff00;
+            text-decoration: underline;
         }
         
         .main-content {
@@ -97,11 +107,16 @@
         }
         
         .guestbook {
-            background: #ff9999;
-            border: 2px solid #ff0000;
+            background: #ff0000;
+            border: 2px solid #000000;
             padding: 15px;
             margin: 20px 0;
             text-align: center;
+        }
+        
+        .guestbook h3 {
+            color: #ffff00;
+            text-shadow: 1px 1px #000000;
         }
         
         .counter {
@@ -118,6 +133,10 @@
             text-align: center;
             margin: 20px 0;
             font-size: 12px;
+            background: #0000ff;
+            color: #ffff00;
+            padding: 10px;
+            border: 2px solid #000000;
         }
         
         .email-icon {
@@ -130,8 +149,8 @@
         }
         
         marquee {
-            background: #ffff00;
-            color: #ff0000;
+            background: #0000ff;
+            color: #ffff00;
             font-weight: bold;
             padding: 5px;
         }
@@ -145,6 +164,21 @@
         @keyframes flicker {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
+        }
+        
+        .main-content h2 {
+            color: #ff0000;
+            text-shadow: 1px 1px #000000;
+        }
+        
+        .main-content h3 {
+            color: #0000ff;
+            text-shadow: 1px 1px #ffffff;
+        }
+        
+        .main-content a {
+            color: #0000ff;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -169,10 +203,10 @@
             <div class="sidebar">
                 <h3>🔥 Hot Links! 🔥</h3>
                 <ul>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">My Friend's Page</a></li>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Cool GIFs</a></li>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">MIDI Music</a></li>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Java Applets</a></li>
+                    <li><a href="#">My Friend's Page</a></li>
+                    <li><a href="#">Cool GIFs</a></li>
+                    <li><a href="#">MIDI Music</a></li>
+                    <li><a href="#">Java Applets</a></li>
                 </ul>
                 
                 <div class="counter">
@@ -185,7 +219,7 @@
                 </div>
                 
                 <div class="email-icon">
-                    📧 <a href="mailto:webmaster@90s.com" style="color: #0000ff;">Email Me!</a>
+                    📧 <a href="mailto:webmaster@90s.com">Email Me!</a>
                 </div>
             </div>
             
@@ -198,10 +232,10 @@
                 
                 <h3>🌟 What's New? 🌟</h3>
                 <ul>
-                    <li><font color="#00ff00">NEW!</font> Added more blinking text!</li>
-                    <li><font color="#ff00ff">NEW!</font> Under construction GIF!</li>
+                    <li><font color="#ff0000">NEW!</font> Added more blinking text!</li>
+                    <li><font color="#0000ff">NEW!</font> Under construction GIF!</li>
                     <li><font color="#ff6600">NEW!</font> Visitor counter!</li>
-                    <li><font color="#0000ff">NEW!</font> Guestbook feature!</li>
+                    <li><font color="#ff0000">NEW!</font> Guestbook feature!</li>
                 </ul>
                 
                 <h3>🎵 My Favorite Things 🎵</h3>
@@ -221,16 +255,16 @@
                         <strong>Email:</strong> <input type="text" size="20"><br><br>
                         <strong>Message:</strong><br>
                         <textarea rows="4" cols="40"></textarea><br><br>
-                        <input type="submit" value="SIGN GUESTBOOK!" style="background: #ff0000; color: #ffffff; font-weight: bold; border: 2px outset #ffffff;">
+                        <input type="submit" value="SIGN GUESTBOOK!" style="background: #0000ff; color: #ffff00; font-weight: bold; border: 2px outset #ffffff;">
                     </form>
                 </div>
                 
                 <h3>🔗 Cool Links 🔗</h3>
                 <p>Check out these totally rad websites:</p>
                 <ul>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Space Jam (1996)</a> - The BEST website ever!</li>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">GeoCities</a> - Where I learned HTML!</li>
-                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Angelfire</a> - Free web hosting!</li>
+                    <li><a href="#">Space Jam (1996)</a> - The BEST website ever!</li>
+                    <li><a href="#">GeoCities</a> - Where I learned HTML!</li>
+                    <li><a href="#">Angelfire</a> - Free web hosting!</li>
                 </ul>
                 
                 <div style="text-align: center; margin: 20px 0;">
