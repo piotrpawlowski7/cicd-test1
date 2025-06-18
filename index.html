@@ -3,60 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI/CD Test Website</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>🌟 Welcome to My Awesome 90s Website! 🌟</title>
     <style>
         body {
+            background: #00ff00 url('data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7') repeat;
+            font-family: "Comic Sans MS", cursive, sans-serif;
             margin: 0;
-            padding: 0;
-            font-family: 'Inter', Arial, sans-serif;
-            background: #f7f7f9;
-            color: #222;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
+            padding: 20px;
+            color: #000000;
         }
+        
         .container {
-            background: #fff;
-            border-radius: 1.5rem;
-            box-shadow: 0 4px 24px rgba(0,0,0,0.07);
-            padding: 2.5rem 2rem;
-            max-width: 420px;
-            width: 90vw;
+            background: #ffff00;
+            border: 3px solid #ff0000;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            background: #ff00ff;
+            padding: 15px;
+            border: 2px dashed #0000ff;
+            margin-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #ff0000;
+            font-size: 36px;
+            text-shadow: 2px 2px #00ff00;
+            margin: 0;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .nav {
+            background: #0000ff;
+            padding: 10px;
+            margin-bottom: 20px;
             text-align: center;
         }
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            letter-spacing: -1px;
-            line-height: 1.1;
+        
+        .nav a {
+            color: #ffff00;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 10px;
+            padding: 5px 10px;
+            border: 2px outset #ffffff;
+            background: #ff0000;
         }
-        p {
-            font-size: 1.15rem;
-            color: #555;
-            margin-bottom: 0;
-            line-height: 1.6;
+        
+        .nav a:hover {
+            border: 2px inset #ffffff;
+            background: #00ff00;
+            color: #000000;
         }
-        @media (max-width: 600px) {
-            .container {
-                padding: 1.5rem 0.5rem;
-            }
-            h1 {
-                font-size: 2rem;
-            }
-            p {
-                font-size: 1rem;
-            }
+        
+        .content {
+            display: table;
+            width: 100%;
+        }
+        
+        .sidebar {
+            display: table-cell;
+            width: 200px;
+            background: #ffcc00;
+            padding: 15px;
+            vertical-align: top;
+            border-right: 3px solid #ff0000;
+        }
+        
+        .main-content {
+            display: table-cell;
+            padding: 15px;
+            background: #ffffff;
+        }
+        
+        .construction {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .construction img {
+            width: 100px;
+            height: 50px;
+            border: 2px solid #000000;
+        }
+        
+        .guestbook {
+            background: #ff9999;
+            border: 2px solid #ff0000;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .counter {
+            background: #000000;
+            color: #00ff00;
+            font-family: "Courier New", monospace;
+            padding: 5px;
+            text-align: center;
+            border: 2px solid #ffffff;
+            margin: 10px 0;
+        }
+        
+        .best-viewed {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+        }
+        
+        .email-icon {
+            animation: rotate 2s linear infinite;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        marquee {
+            background: #ffff00;
+            color: #ff0000;
+            font-weight: bold;
+            padding: 5px;
+        }
+        
+        .flame {
+            color: #ff6600;
+            font-size: 24px;
+            animation: flicker 0.5s infinite;
+        }
+        
+        @keyframes flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to My CI/CD Test Website <span style="font-size:1rem;color:#4f8cff;">v2</span></h1>
-        <p>This is a simple HTML page to demonstrate CI/CD with GitHub Actions.<br>Enjoy the clean, modern, and responsive design!</p>
+        <div class="header">
+            <h1>🌟 Welcome to My Awesome 90s Website! 🌟</h1>
+            <p><strong>Last Updated: December 2024</strong></p>
+        </div>
+        
+        <marquee scrollamount="5">🎉 NEW! Check out our amazing content! 🎉</marquee>
+        
+        <div class="nav">
+            <a href="#home">🏠 Home</a>
+            <a href="#about">ℹ️ About</a>
+            <a href="#links">🔗 Cool Links</a>
+            <a href="#guestbook">📝 Guestbook</a>
+            <a href="#email">📧 Email Me!</a>
+        </div>
+        
+        <div class="content">
+            <div class="sidebar">
+                <h3>🔥 Hot Links! 🔥</h3>
+                <ul>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">My Friend's Page</a></li>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Cool GIFs</a></li>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">MIDI Music</a></li>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Java Applets</a></li>
+                </ul>
+                
+                <div class="counter">
+                    Visitors: 000,042
+                </div>
+                
+                <div class="construction">
+                    <img src="data:image/gif;base64,R0lGODlhGAAYAIAAAAAAAP///yH5BAEAAAAALAAAAABgABgAAAIBRAA7" alt="Under Construction">
+                    <br><strong>UNDER CONSTRUCTION!</strong>
+                </div>
+                
+                <div class="email-icon">
+                    📧 <a href="mailto:webmaster@90s.com" style="color: #0000ff;">Email Me!</a>
+                </div>
+            </div>
+            
+            <div class="main-content">
+                <h2><span class="flame">🔥</span> Welcome to My Amazing Website! <span class="flame">🔥</span></h2>
+                
+                <p><strong>Hello World!</strong> Welcome to my totally awesome website! I'm so excited to share this with you! 😊</p>
+                
+                <p>This website is dedicated to the <font color="#ff0000">AMAZING</font> world of <font color="#0000ff">90s web design</font>! Remember when the internet was new and exciting? Those were the days!</p>
+                
+                <h3>🌟 What's New? 🌟</h3>
+                <ul>
+                    <li><font color="#00ff00">NEW!</font> Added more blinking text!</li>
+                    <li><font color="#ff00ff">NEW!</font> Under construction GIF!</li>
+                    <li><font color="#ff6600">NEW!</font> Visitor counter!</li>
+                    <li><font color="#0000ff">NEW!</font> Guestbook feature!</li>
+                </ul>
+                
+                <h3>🎵 My Favorite Things 🎵</h3>
+                <ul>
+                    <li>Nirvana</li>
+                    <li>Friends TV Show</li>
+                    <li>Tamagotchi</li>
+                    <li>Beanie Babies</li>
+                    <li>Pokemon Cards</li>
+                </ul>
+                
+                <div class="guestbook">
+                    <h3>📝 Sign My Guestbook! 📝</h3>
+                    <p>Tell me what you think of my website!</p>
+                    <form>
+                        <strong>Name:</strong> <input type="text" size="20"><br><br>
+                        <strong>Email:</strong> <input type="text" size="20"><br><br>
+                        <strong>Message:</strong><br>
+                        <textarea rows="4" cols="40"></textarea><br><br>
+                        <input type="submit" value="SIGN GUESTBOOK!" style="background: #ff0000; color: #ffffff; font-weight: bold; border: 2px outset #ffffff;">
+                    </form>
+                </div>
+                
+                <h3>🔗 Cool Links 🔗</h3>
+                <p>Check out these totally rad websites:</p>
+                <ul>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Space Jam (1996)</a> - The BEST website ever!</li>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">GeoCities</a> - Where I learned HTML!</li>
+                    <li><a href="#" style="color: #0000ff; text-decoration: underline;">Angelfire</a> - Free web hosting!</li>
+                </ul>
+                
+                <div style="text-align: center; margin: 20px 0;">
+                    <img src="data:image/gif;base64,R0lGODlhGAAYAIAAAAAAAP///yH5BAEAAAAALAAAAABgABgAAAIBRAA7" alt="Cool GIF" width="100" height="50" style="border: 2px solid #000000;">
+                    <br><strong>Cool GIF!</strong>
+                </div>
+            </div>
+        </div>
+        
+        <div class="best-viewed">
+            <p><strong>Best viewed with Netscape Navigator at 800x600 resolution!</strong></p>
+            <p>This page works best with Internet Explorer 4.0 or higher!</p>
+        </div>
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <p><font size="2">© 2024 My Awesome 90s Website. All rights reserved!</font></p>
+            <p><font size="1">Made with ❤️ and lots of HTML tables!</font></p>
+        </div>
     </div>
 </body>
 </html> 
