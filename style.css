@@ -881,3 +881,242 @@ body {
     font-style: normal;
     font-size: 12px;
 }
+
+/* =========================================
+   RESPONSIVE / MOBILE STYLES
+   ========================================= */
+
+/* ---- TABLET (max 768px) ---- */
+@media (max-width: 768px) {
+
+    .outer-wrapper {
+        margin: 10px;
+    }
+
+    /* Stack sidebar below main on tablet */
+    .content-area {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px solid #003399;
+        /* Lay sidebar sections out in a row on tablet */
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0;
+        padding: 10px;
+    }
+
+    .sidebar-section {
+        flex: 1 1 180px;
+        min-width: 150px;
+        margin-bottom: 10px;
+        padding: 0 8px;
+        border-right: 1px dotted #334488;
+    }
+
+    .sidebar-section:last-child {
+        border-right: none;
+    }
+
+    /* Two-column grids → single column */
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fav-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Nav buttons smaller */
+    .nav a {
+        font-size: 12px;
+        padding: 4px 8px;
+        margin: 2px 3px;
+    }
+
+    /* Header */
+    .header h1 {
+        font-size: 26px;
+    }
+
+    /* Info grid on about page */
+    .info-grid {
+        grid-template-columns: 110px 1fr;
+    }
+
+    /* Guestbook form row on small screens */
+    .guestbook .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+    }
+
+    .guestbook label {
+        width: auto;
+    }
+
+    .guestbook .textarea-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+    }
+}
+
+/* ---- MOBILE (max 480px) ---- */
+@media (max-width: 480px) {
+
+    .outer-wrapper {
+        margin: 6px;
+        padding: 3px;
+    }
+
+    /* Header: stack and shrink */
+    .header {
+        padding: 12px 10px 8px;
+    }
+
+    .header h1 {
+        font-size: 20px;
+        letter-spacing: 0;
+    }
+
+    .header::before {
+        font-size: 13px;
+        letter-spacing: 2px;
+    }
+
+    .star-row {
+        font-size: 14px;
+        letter-spacing: 3px;
+    }
+
+    .header-sub {
+        font-size: 11px;
+    }
+
+    /* Nav: wrap and shrink */
+    .nav {
+        padding: 6px 4px;
+    }
+
+    .nav a {
+        font-size: 11px;
+        padding: 3px 7px;
+        margin: 2px;
+    }
+
+    /* Sidebar: single column on mobile */
+    .sidebar {
+        flex-direction: column;
+        padding: 10px 12px;
+    }
+
+    .sidebar-section {
+        flex: none;
+        min-width: 0;
+        border-right: none;
+        border-bottom: 1px dotted #334488;
+        padding: 0 0 8px;
+        margin-bottom: 8px;
+    }
+
+    .sidebar-section:last-child {
+        border-bottom: none;
+    }
+
+    /* Main content */
+    .main-content {
+        padding: 12px 14px;
+    }
+
+    .main-content h2 {
+        font-size: 18px;
+    }
+
+    .main-content h3 {
+        font-size: 15px;
+    }
+
+    /* Construction banner: hide less critical items */
+    .construction-banner {
+        gap: 8px;
+        padding: 6px 8px;
+        font-size: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .construction-icon:not(:first-child):not(:last-child) {
+        display: none;
+    }
+
+    /* Ticker font */
+    .ticker-track {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+
+    /* Links and favorites: already 1-col from tablet breakpoint */
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fav-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Top10 list indent */
+    .top10-list li {
+        padding-left: 32px;
+        font-size: 12px;
+    }
+
+    /* Info grid: stack label above value */
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-grid dt {
+        text-align: left;
+        padding-bottom: 0;
+        margin-top: 6px;
+    }
+
+    .info-grid dd {
+        padding-top: 0;
+        padding-left: 8px;
+        border-left: 2px solid #336699;
+    }
+
+    /* Quiz results */
+    .quiz-result .result {
+        font-size: 16px;
+    }
+
+    /* Guestbook entry header: stack on tiny screens */
+    .gb-entry .gb-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2px;
+    }
+
+    /* Webring nav: wrap */
+    .webring-nav {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    /* Footer badges: smaller */
+    .footer-badge {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+
+    /* Counter digits */
+    .counter-digits {
+        font-size: 18px;
+    }
+}
